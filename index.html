@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="style.css" rel="stylesheet" type="text/css">
+        <title>CV</title>
+    </head>
+
+    <body>
+
+        <button onclick="changeColor()"> Repaint!</button>
+
+        <div class="basic_info" align="center">
+            <h1>Braulio Quiñe Chumpitaz</h1>
+            <img src="/home/brakine/Documents/UTEC/RLE/Proyectos/CV_project/create_CV/imgs/foto_braulio_quine.jpeg" 
+                alt="Profile Picture" width="200" height="200">
+            <p align="left">Email: bqch20@gmail.com</p>
+            <p align="left">Phone: (+51) 987 199 392</p>   
+            <p align="left">Linkedin: <a href="https://www.linkedin.com/in/braulio-qui%C3%B1e-chumpitaz-2bb2a7151/">
+                https://www.linkedin.com/in/braulio-qui%C3%B1e-chumpitaz-2bb2a7151/</a></p>
+            <p align="left">GitHub: <a href="https://github.com/BQC21">
+                https://github.com/BQC21</a></p>
+            <h2>About Me</h2>
+            <p align="left"> Mechatronic engineer with experience in 
+                programming, electronics, and robotics. 
+                Passionate about developing innovative solutions 
+                and continuous learning.
+            </p>
+        </div>
+        <div class="education" align="center">
+            <h2>Education</h2>
+            <h3>Bachelor's Degree in Mechatronic Engineering</h3>
+            <p align="left">University: Universidad de ingeniería y tecnología (UTEC)</p>
+            <p align="left">Graduation Year: 2026</p>
+        </div>
+        <div class="skills" align="center">
+            <h2>Skills</h2>
+            <ul align="left">
+                <li>Programming Languages: Python, C/C++, JavaScript</li>
+                <li>Web Development: HTML, CSS, React.js, Node.js</li>
+                <li>Robotics: Robot Operating System (ROS), Arduino</li>
+                <li>Data Analysis: MATLAB, Excel, Pandas</li>
+                <li>Deep Learning: Pytorch, TensorFlow, Keras</li>
+                <li>Database Management: SQL, MongoDB</li>
+                <li>Cloud Platforms: AWS, Google Cloud</li>
+                <li>Computer vision: OpenCV, YOLO</li>
+                <li>Version Control: Git, GitHub</li>
+                <li>Languages: Spanish (Native), English (Fluent)</li>
+            </ul>
+        </div>
+        <div class="hobbies" align="center">
+            <h2>Hobbies</h2>
+            <ul align="left">
+                <li>Reading books on technology and innovation</li>
+                <li>Sports: calisthenics, running, swimming</li>
+                <li>playing musical instruments: guitar, drums</li>
+            </ul>
+        </div>
+    </body>
+
+    <script>
+        function getRandomColor(){
+            let letters = '0123456789ABCDEF';
+            let color = '#';
+            for (let i = 0; i < 6; i++) {
+            color += letters[Math.floor(Math.random() * 16)];
+            }
+            return color;
+        }
+        function changeColor(){
+            let newColor = getRandomColor();
+            document.body.style.backgroundColor = newColor;
+        }
+    </script>
+
+</html>
