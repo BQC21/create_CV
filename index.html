@@ -3,9 +3,7 @@
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1 viewport-fit=cover" />
-        <meta name="theme-color" content="#000000" />
-        
-        <link href="./imgs/foto_braulio_quine.jpeg" rel="icon" type="image/jpeg"/>
+            
         <link href="style.css" rel="stylesheet" type="text/css">
 
 		<link 
@@ -21,72 +19,97 @@
         <title>CV</title>
     </head>
     <body>
-        <div class="basic_info" align="center">
-            <h1>Braulio Quiñe Chumpitaz</h1>
-            <img class="profile_photo" 
-                src="./imgs/foto_braulio_quine.jpeg" 
-                alt="Profile Picture" width="300" height="300">
-            <p>Email: bqch20@gmail.com <br/> 
-                Phone: (+51) 987 199 392 <br/> 
-                Linkedin: <a href="https://www.linkedin.com/in/braulio-qui%C3%B1e-chumpitaz-2bb2a7151/">
-                https://www.linkedin.com/in/braulio-qui%C3%B1e-chumpitaz-2bb2a7151/</a> <br/> 
-                GitHub: <a href="https://github.com/BQC21"> https://github.com/BQC21</a></p>
-        <div class="about_me" align="center">
-            <h2>About Me</h2>
-            <p> Mechatronic engineer with experience in 
-                software engineering and researching projects 
-                with deep learning and computer vision. 
-            </p>
-        </div>
-        <div class="projects" align="center">
-            <h2>Projects</h2>
-            <ul align="center">
-                <mark> UNIVERSIDAD DE INGENIERÍA Y TECNOLOGÍA | </mark> <span> 2025 - December 2025 </span> <br/>
-                Multimodal decompostion in a neural network architecture to forecast pv power generation <br/>
-                <ul>
-                    <li>Achieved error reduction upper to 20% respecting to the literature review architecture</li>
-                    <li>Increased correlation between desired and predicted outputs for 2 benchmark datasets</li>
+        <div class="container">
+            <header class="header">
+                <h1>Braulio Quiñe Chumpitaz</h1>
+                <img class="profile_photo" 
+                    src="./imgs/foto_braulio_quine.jpeg" 
+                    alt="Profile Picture" width="300" height="300">
+                <p>Email: bqch20@gmail.com <br/> 
+                    Phone: (+51) 987 199 392 <br/>
+                </p>
+            </header>
+            <section class="card">
+                <h2>About Me</h2>
+                <p> Mechatronic engineer with experience in 
+                    software development and researching projects 
+                    with deep learning and computer vision. 
+                </p>
+            </section>
+            <section class="card">
+                <h2>Projects</h2>
+                <ul align="center">
+                    <mark> UNIVERSIDAD DE INGENIERÍA Y TECNOLOGÍA | </mark> <span> February 2025 - December 2025 </span> <br/>
+                    Multimodal decompostion in a neural network architecture to forecast pv power generation <br/>
+                    <ul>
+                        <li>Achieved error reduction upper to 20% respecting to the literature review architecture</li>
+                        <li>Increased correlation between desired and predicted outputs for 2 benchmark datasets</li>
+                    </ul>
+                    <br/> <br/> <br/>
+                    <mark> ROBOTIC AIR SYSTEMS (RAS) | </mark> <span> February 2024 - July 2024 </span> <br/>
+                    Design a system for a drone autonomous navigation in warehouses <br/> 
+                    <ul>
+                        <li>Adapt a new platform for flight control</li>
+                        <li>Implement Isaac ROS Visual SLAM to reconstruct the environment</li>
+                        <li>Implement Nav2 for autonomous navigation and Nvblox for avoiding obstacles</li>
+                    </ul>
                 </ul>
-                <br/> <br/> <br/>
-                <mark> ROBOTIC AIR SYSTEMS (RAS) | </mark> <span> February 2024 - July 2024 </span> <br/>
-                Design a system for a drone autonomous navigation in warehouses <br/> 
+            </section>
+            <section class="card">
+                <h2>Education</h2>
+                <h3>Bachelor's Degree in Mechatronic Engineering</h3>
+                <p>University: Universidad de ingeniería y tecnología (UTEC) <br/>
+                    Graduation Year: 2026</p>
+            </section>
+            <section class="card">
+                <h2>Skills & tools</h2>
                 <ul>
-                    <li>Adapt a new platform for flight control</li>
-                    <li>Implement Isaac ROS Visual SLAM to reconstruct the environment</li>
-                    <li>Implement Nav2 for autonomous navigation and Nvblox for avoiding obstacles</li>
+                    <li>Programming Languages: Python, JavaScript, C/C++</li>
+                    <li>Full stack Development: HTML, CSS, React.js, Node.js, Flask, SQL, APIs</li>
+                    <li>DevOps: Linux, Docker, Kubernetes, Cloud computing</li>
+                    <li>Version Control: Git, GitHub</li>
+                    <li>Agile Methodologies: Notion, Jira</li>
+                    <li>Data Analytics: Openpyxl, Pandas</li>
+                    <li>Deep Learning: Pytorch, TensorFlow, Keras</li>
+                    <li>Computer vision: OpenCV, YOLO</li>
+                    <li>Robotics: ROS2, Arduino, Jetson</li>
+                    <li>Languages: Spanish (Native), English (B2)</li>
                 </ul>
-            </ul>
+            </section>
+            <section class="card">
+                <h2>Hobbies</h2>
+                <ul>
+                    <li>Reading about philosophy, personal growthing and catholicism</li>
+                    <li>Sports: calisthenics & running</li>
+                    <li>playing musical instruments: guitar & drums</li>
+                </ul>
+            </section>
+            <footer class="footer">
+                <p>© 2026 Braulio Quiñe Chumpitaz. All rights reserved.</p>
+                <div class="social-icons">
+                    <a
+                        href="https://github.com/BQC21"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        title="GitHub profile"
+                        class="social-icon-wrapper"
+                        aria-label="GitHub profile"
+                    >
+                        <img src="./assets/Git.svg" alt="GitHub logo" class="social-icon" />
+                    </a>
+                    <a
+                        href="https://www.linkedin.com/in/braulio-qui%C3%B1e-chumpitaz-2bb2a7151/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        title="LinkedIn profile"
+                        class="social-icon-wrapper"
+                        aria-label="LinkedIn profile"
+                    >
+                        <img src="./assets/Linkedin.svg" alt="LinkedIn logo" class="social-icon" />
+                    </a>
+                </div>
+            </footer>
+            <br/> <br/>
         </div>
-        <div class="education" align="center">
-            <h2>Education</h2>
-            <h3>Bachelor's Degree in Mechatronic Engineering</h3>
-            <p>University: Universidad de ingeniería y tecnología (UTEC) <br/>
-                Graduation Year: 2026</p>
-        </div>
-        <div class="skills" align="center">
-            <h2>Skills & tools</h2>
-            <ul>
-                <li>Programming Languages: Python, JavaScript, C/C++</li>
-                <li>Full stack Development: HTML, CSS, React.js, Node.js, Flask, SQL, APIs</li>
-                <li>DevOps: Linux, Docker, Kubernetes, Cloud computing</li>
-                <li>Version Control: Git, GitHub</li>
-                <li>Agile Methodologies: Notion, Jira</li>
-                <li>Data Analytics: Openpyxl, Pandas</li>
-                <li>Deep Learning: Pytorch, TensorFlow, Keras</li>
-                <li>Computer vision: OpenCV, YOLO</li>
-                <li>Robotics: ROS2, Arduino, Jetson</li>
-                <li>Languages: Spanish (Native), English (B2)</li>
-            </ul>
-        </div>
-        <div class="hobbies" align="center">
-            <h2>Hobbies</h2>
-            <ul>
-                <li>Reading about philosophy, personal development and catholicism</li>
-                <li>Sports: calisthenics, running, swimming</li>
-                <li>playing musical instruments: guitar, drums</li>
-            </ul>
-        </div>
-
-        <!-- <script type = "module" src="app.js"></script> -->
     </body>
 </html>
